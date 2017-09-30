@@ -1,7 +1,8 @@
-## Getting and Cleaning Data: Week 1 - Quiz 1
+## Getting and Cleaning Data: Week 1 - Quiz
 
 
 ## Problem 1
+##
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
 dest <- "Week 1 - Quiz 1 - Problem 1.csv"
 download.file(url, dest)
@@ -11,6 +12,7 @@ length(which(data$VAL==24))
 
 
 ## Problem 3
+##
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx"
 dest <- "Week 1 - Quiz 1 - Problem 3.xlsx"
 download.file(url, dest,mode='wb')
@@ -24,6 +26,7 @@ sum(dat$Zip*dat$Ext,na.rm=T)
 
 
 ## Problem 4
+##
 install.packages("XML")
 library(XML)
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
@@ -37,6 +40,7 @@ length(which(zipcodes==21231))
 
 
 ## Problem 5
+##
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
 dest <- "Week 1 - Quiz 1 - Problem 5.xml"
 download.file(url, dest)
