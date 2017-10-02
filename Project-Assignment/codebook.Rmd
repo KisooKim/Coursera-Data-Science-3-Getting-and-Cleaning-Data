@@ -4,12 +4,6 @@ author: "Kisoo Kim"
 date: "Oct 2, 2017"
 output: html_document
 ---
-[Link to project on GitHUB](https://github.com/KisooKim/Coursera-Data-Science-3-Getting-and-Cleaning-Data)
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Getting and Cleaning Data Course Project
 
@@ -180,5 +174,4 @@ library(plyr)
 head(names(all_wanted))
 tidy_result <-aggregate(. ~subject + act_label, all_wanted, mean)
 tidy_result<-tidy_result[order(tidy_result$subject,tidy_result$act_no),]
-write.table(tidy_result, file = "peer-review-assignment-project-result.txt",row.name=FALSE)
-```
+write.table(tidy_result, file = "Tidy.txt",row.name=FALSE)
